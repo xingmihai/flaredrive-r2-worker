@@ -249,6 +249,7 @@ async function handleChildren(context) {
   try {
     const [bucket, path] = parseBucketPath(context);
     const prefix = path && `${path}/`;
+    if (!bucket || prefix.startsWith("_$flaredrive$/")) return notFound();
 
     const objList = await bucket.list({
       prefix,
@@ -265,17 +266,6 @@ async function handleChildren(context) {
     let folders = objList.delimitedPrefixes;
     if (!path)
       folders = folders.filter((folder) => folder !== "_$flaredrive$/");
-    if (!allowList.includes("*") && !path) {
-      objKeys = objKeys.filter((obj) =>
-        allowList.some((allow) => obj.key.startsWith(allow))
-      );
-      folders = folders.filter((folder) =>
-        allowList.some((allow) => folder.startsWith(allow))
-      );
-      for (const allow of allowList) {
-        if (!folders.includes(allow)) folders.push(allow);
-      }
-    }
 
     return new Response(JSON.stringify({ value: objKeys, folders }), {
       headers: { "Content-Type": "application/json" },
