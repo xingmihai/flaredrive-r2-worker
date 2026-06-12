@@ -1,0 +1,13 @@
+{
+  "name": "flaredrive-r2-worker",
+  "version": "1.0.0",
+  "description": "FlareDrive-R2 Cloudflare Worker deployment",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
