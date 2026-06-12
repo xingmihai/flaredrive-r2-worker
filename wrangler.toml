@@ -1,6 +1,6 @@
 name = "FlareDrive-R2-Workers"
 main = "src/index.js"
-compatibility_date = "2024-01-01"
+compatibility_date = "2026-06-13"
 
 # R2 存储桶绑定 - 替换为你的 R2 桶名
 [[r2_buckets]]
