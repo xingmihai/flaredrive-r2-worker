@@ -1,4 +1,4 @@
-name = "flaredrive-r2"
+name = "flaredrive-r2-worker"
 main = "src/index.js"
 compatibility_date = "2024-01-01"
 
