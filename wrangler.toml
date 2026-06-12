@@ -26,3 +26,5 @@ AWS_SECRET_ACCESS_KEY = "ced273817796d2b760ffbb54e1c04addc9e3803c997cb30ff37e938
 # 访客访问权限（逗号分隔的路径列表，* 表示全部访问）
 GUEST = ""
 
+# 管理员账号，格式为 用户名:密码
+admin:123456 = "*"
