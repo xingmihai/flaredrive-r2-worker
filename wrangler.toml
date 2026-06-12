@@ -17,14 +17,5 @@ binding = "ASSETS"
 [vars]
 # R2 公开访问 URL（用于 /raw/ 路径代理，格式：https://pub-xxx.r2.dev 或自定义域名）
 PUBURL = "https://pub-d706d0eef12a4417ae726f2faa9aa775.r2.dev"
-# Cloudflare 账号 ID（用于 S3 API）
-CF_ACCOUNT_ID = "654f0d21684c84e66d91766ee6af7b3f"
-# R2 S3 访问密钥
-AWS_ACCESS_KEY_ID = "38c6a24ad96703f73b0e91d1b7564db1"
-# R2 S3 访问密钥
-AWS_SECRET_ACCESS_KEY = "ced273817796d2b760ffbb54e1c04addc9e3803c997cb30ff37e938f063e38c9"
 # 访客访问权限（逗号分隔的路径列表，* 表示全部访问）
 GUEST = ""
-PUBLIC_LIST=true   # 开启游客浏览所有目录
-# PUBLIC_LIST=false  # 关闭，需要登录才能看
-PUBLIC_RAW=true    # 游客可以下载所有文件
