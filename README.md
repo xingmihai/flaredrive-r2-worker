@@ -1,5 +1,9 @@
 # FlareDrive-R2 Worker 部署指南
 
+### 🌟 项目简介
+> 📌 本项目修改自 [Cloudflare-R2](https://github.com/willow-god/FlareDrive-R2/)，因为Cloudflare pages 不能优选，所以有了此项目
+
+
 ## 前置要求
 
 - Cloudflare 账号
