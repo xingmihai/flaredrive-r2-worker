@@ -24,7 +24,7 @@
 3. 配置 **Public URLs**，启用公开访问
 4. 记录公开访问 URL（如 `https://pub-xxx.r2.dev`）
 
-### 3. 复刻此仓库
+### 3. [复刻此仓库](https://github.com/xingmihai/FlareDrive-R2-Workers/fork)
 
 ### 4. 配置 wrangler.toml
 
