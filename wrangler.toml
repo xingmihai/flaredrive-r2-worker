@@ -5,7 +5,7 @@ compatibility_date = "2026-06-13"
 # R2 存储桶绑定 - 替换为你的 R2 桶名
 [[r2_buckets]]
 binding = "BUCKET"
-bucket_name = "store"
+bucket_name = "your-bucket-name"
 
 # 静态资源绑定 (Workers Static Assets)
 # 部署前确保 public 目录包含 index.html 和 assets/
